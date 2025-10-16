@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Empowering The Nation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>Empowering The Nation</h1>
+    <p>Upskilling South Africans in Domestic and Gardening Services</p>
+  </header>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <button onclick="showPage('home')">Home</button>
+    <button onclick="showPage('services')">Services</button>
+    <button onclick="showPage('quote')">Request Quote</button>
+    <button onclick="showPage('contact')">Contact</button>
+  </nav>
+
+  <!-- HOME PAGE -->
+  <section id="home" class="page active">
+    <h2>Welcome</h2>
+    <p>Empowering The Nation provides affordable training and skill development for domestic workers and gardeners.</p>
+  </section>
+
+  <!-- SERVICES PAGE -->
+  <section id="services" class="page">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Domestic Worker Training</li>
+      <li>Gardening and Landscaping Skills</li>
+      <li>Cooking and Housekeeping</li>
+    </ul>
+  </section>
+
+  <!-- REQUEST QUOTE PAGE -->
+  <section id="quote" class="page">
+    <h2>Request a Quote</h2>
+    <form id="quoteForm">
+      <input type="text" id="name" placeholder="Full Name" required><br>
+      <input type="email" id="email" placeholder="Email" required><br>
+      <input type="text" id="service" placeholder="Service Needed" required><br>
+      <textarea id="description" placeholder="Describe your request" required></textarea><br>
+      <button type="submit">Submit</button>
+    </form>
+    <p id="quoteMessage"></p>
+  </section>
+
+  <!-- CONTACT PAGE -->
+  <section id="contact" class="page">
+    <h2>Contact Us</h2>
+    <p>Email: info@empoweringthenation.co.za</p>
+    <p>Phone: +27 81 555 1234</p>
+    <p>Address: Johannesburg, South Africa</p>
+  </section>
+
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore.js"></script>
+  <script src="firebase-config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
